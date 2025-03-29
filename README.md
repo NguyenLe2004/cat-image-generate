@@ -15,12 +15,15 @@ This project utilizes **Diffusion GANs** to generate cat images from random nois
 Users have several options to train the cat generate model:
 * Download dataset from [kaggle](https://www.kaggle.com/datasets/spandan2/cats-faces-64x64-for-generative-models)
 * Install the required dependencies by running `pip install -r requirements.txt`.
-* Run `python3 main.py -sp path/to/input/folder` to train the model with default parameters on a local dataset.
-* Run `python3 main.py -b batch_size -lr learning_rate` to train the model with your preferred batch size and learning rate.
+* Run `python3 main.py --src_data_path path/to/input/folder` to train the model with default parameters on a local dataset.
+* Run `python3 main.py --epochs 200 --batch_size 64 --learning_rate 1e-3` to train the model with your preferred batch size and learning rate.
   
 ## Generate image
 ### Using Python
-- Run `python3 generate.py -c path/to/checkpoint -o path/to/output` to generate image
-- Example: `python3 generate.py -c cat_face_generate_model.pt -o generated_image.png`
+- Run `python3 generate.py --checkpoint_path path/to/checkpoint --output_path path/to/output` to generate image
+- Example: `python3 generate.py --checkpoint_path cat_face_generate_model.pt --output_path generated_image.png`
 ### Using Docker
 - Run `docker pull nguyenlequang/cat_generate` to pull the Docker image.
+## References
+- [Diffusion-GAN: Training GANs with Diffusion](https://arxiv.org/abs/2206.02262)
+- [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155)
