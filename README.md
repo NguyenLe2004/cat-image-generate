@@ -1,6 +1,6 @@
 # Cat Image Generate [PyTorch]
 <p align="center">
-  <img src="./generate/grid_generated_images.png" width="500">
+  <img src="./generate/grid_generated_images.png" width="400">
 </p>
 
 ## Introduction
