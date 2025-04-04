@@ -5,6 +5,10 @@
 
 ## Introduction
 This project utilizes **Diffusion GANs** to generate cat images from random noise. It combines the advantages of **Generative Adversarial Networks (GANs)** and **Diffusion Models**, improving the quality of generated images.
+## Try it online
+You can try generating cat images directly in your browser via Hugging Face Spaces:
+
+👉 [Cat Image Generator on Hugging Face Spaces](https://huggingface.co/spaces/NguyenLe2004/Cat-Face-Generate)
 ## Key Features
 - Build architecture for Diffusion GANs.
 - Train Diffusion GANs on a cat dataset.  
